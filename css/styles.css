@@ -262,7 +262,7 @@ h3{
 .camp label{
     color: var(--blanco);
     font-weight: 700;
-    margin-bottom: .5rem;
+    margin-bottom: .4rem;
     display: block;
 }
 
@@ -270,4 +270,39 @@ h3{
     .camp label{
         flex:0 0 90px;
     }
+}
+
+.camp input [type="text"],
+.camp input [type="tel"],
+.camp input [type="email"],
+.camp textarea{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media(min-width:768px){
+    :is(.camp)
+    :is(
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea){
+            flex: 1;
+        }
+}
+
+.w100{
+    flex: 0 0 100%;
+}
+
+.camp textarea{
+    height: 5rem;
+}
+
+.enviar{
+    display: flex;
+    justify-content: flex-end;
 }
